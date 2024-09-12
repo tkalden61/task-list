@@ -60,5 +60,5 @@ Route::fallback(function (){
 Route::put('tasks/{task}/toggle-completed', function (Task $task){
     $task->taskCompleted();
 
-    return redirect()->back()->with('success', 'Task Completed Successfully');
+    return redirect()->back()->with('success', 'Task updated Successfully');
 })->name('tasks.toggle-completed');
